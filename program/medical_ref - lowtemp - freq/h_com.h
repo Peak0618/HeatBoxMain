@@ -57,6 +57,8 @@ extern uint16_t guc_flash_add;                     // 接收的IC卡注册已用的地址
 extern uint16_t guc_temp_flash_add;                // 接收的IC卡注册临时保存的地址
 extern uint8_t  guc_IC_erasure_tx_ok_count;        // 注销IC卡指令，在bflg_com_tx_ok中设置发送多次计数,防止丢包
 extern int16_t  gss_liquid_led_button;              //液晶屏的开灯按钮  ：1开 0关
-extern int16_t  gss_liquid_ozone_disinfect_button;  //液晶屏的启动杀菌按钮：1开 0关          
+extern int16_t  gss_liquid_ozone_disinfect_button;  //液晶屏的启动杀菌按钮：1开 0关      
+extern int16_t  gss_pwm_adjust;
+
 //------------------------------------------------------------------------------
 #endif

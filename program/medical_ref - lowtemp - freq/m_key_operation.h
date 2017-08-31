@@ -63,7 +63,7 @@ extern int8_t   gsc_disp_parm_type;
 
 //分支_工厂参数
 #define  DISP_FAC_r0                        0   //控制温差                magnify 10
-#define  DISP_FAC_r1                        1   //档位切换温差
+#define  DISP_FAC_r1                        1   //档位切换温差              magnify 10
 #define  DISP_FAC_Ct1                       2   //测试传感器校准值            magnify 10
 #define  DISP_FAC_Ct2                       3   //显示传感器校准值            magnify 10
 #define  DISP_FAC_Cd                        4   //初始上电PTC开启延时

@@ -17,6 +17,7 @@ overview:20170406
 #include "m_key_operation.h"
 #include "h_main.h"
 #include "h_protect.h"
+#include "h_com.h"
 //------------------------------------------------------------------------------------------
 //函数声明
 void PTC_heat_power_on_delaytime(void);
@@ -29,6 +30,7 @@ void PTC_fre_RL_deal(void);
 
 //------------------------------------------------------------------------------------------
 //macro
+#define     PWM_PERIOD            33333    //周期设定为33333
 #define     PWM_HIGH_LEVEL_CNT    0x208d   //pwm输出高电平计时    --30HZ的25%占空比
 #define     PWM_LOW_LEVEL_CNT     0x61a8   //pwm输出低电平计时
 #define     PWM_HIGH_LEVEL        1        //pwm为高电平时标志
@@ -219,20 +221,22 @@ void PTC_heat_RL_out(void)
 **********************************************************************************************************************************************/
 void PTC_fre_RL_deal(void)
 {
-    if(bflg_pwm_level == PWM_HIGH_LEVEL)       //进中断pwm为高时，则要变为低电平
+    if(bflg_pwm_level == PWM_HIGH_LEVEL)                  //进中断pwm为高时，则要变为低电平
     {
         bflg_pwm_level = PWM_LOW_LEVEL;
         
-        TDR06 = PWM_LOW_LEVEL_CNT;           //重新设定定时中断周期
-        TS0 |= _0040_TAU_CH6_START_TRG_ON;   //重启定时器，可将TCR重新装载TDR的值并能重新计数
+        //TDR06 = PWM_LOW_LEVEL_CNT;                       //重新设定定时中断周期
+        TDR06 = (uint16_t)(33333 - ((PWM_PERIOD * gss_pwm_adjust)/100)); //调试占空比+，后期定了删掉
+        TS0 |= _0040_TAU_CH6_START_TRG_ON;                 //重启定时器，可将TCR重新装载TDR的值并能重新计数
 
-        RED_LED_PIN = PTC_OUT_OFF;          //关 
+        RED_LED_PIN = PTC_OUT_OFF;                         //关 
     }
     else
     {
         bflg_pwm_level = PWM_HIGH_LEVEL;
         
-        TDR06 = PWM_HIGH_LEVEL_CNT;          
+        //TDR06 = PWM_HIGH_LEVEL_CNT;  
+        TDR06 =  (uint16_t)((PWM_PERIOD * gss_pwm_adjust)/100);
         TS0 |= _0040_TAU_CH6_START_TRG_ON;  
 
         RED_LED_PIN = PTC_OUT_ON;             //开     

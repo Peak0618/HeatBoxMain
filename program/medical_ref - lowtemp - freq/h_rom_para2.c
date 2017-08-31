@@ -323,7 +323,7 @@ const int16_t EEPROM_init[MAX_PARA_NUMBER + 1][5]=
   {     5, -1000,  1000,      1,      not_dot},   //Pr-27   num_user_set_dA
   {     1, -1000,  1000,      1,      not_dot},   //Pr-28   num_user_set_S1
   {    30, -1000,  1000,      1,      not_dot},   //Pr-29   num_user_set_S2
-  {     0, -1000,  1000,      1,      not_dot},   //Pr-39   num_user_set_TT
+  {     0, -1000,  1000,      1,      not_dot},   //Pr-30   num_user_set_TT
   
   {    10, -1000,  1000,      1,      not_dot},   //Pr-31   num_fac_r0
   {   100, -1000,  1000,      1,      not_dot},   //Pr-32   num_fac_r1

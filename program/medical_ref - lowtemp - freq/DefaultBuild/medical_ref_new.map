@@ -1,7 +1,7 @@
 
 
 
-78K0R Linker W1.70                            Date:22 Jul 2017 Page:   1
+78K0R Linker W1.70                            Date: 9 Aug 2017 Page:   1
 
 Command:   -yD:\Program Files (x86)\Renesas Electronics\CubeSuite+\Devic
            e\RL78\Devicefile -_msgoff -oDefaultBuild\medical_ref_new.lmf
@@ -34,8 +34,8 @@ Directive:
 *** Link information ***
 
     64 output segment(s)
- 7CAAH byte(s) real data
-  8044 symbol(s) defined
+ 7D04H byte(s) real data
+  8049 symbol(s) defined
 
 
 *** Memory map ***
@@ -542,7 +542,7 @@ Directive:
                   @@CNST   m_PTC_heat
                                       04EE0H    00000H
                   @@CNST   m_test     04EE0H    00000H
-         @@CODEL                      04EE0H    057A6H  CSEG
+         @@CODEL                      04EE0H    05800H  CSEG
                   @@CODEL  r_main     04EE0H    0001BH
                   @@CODEL  r_systeminit
                                       04EFBH    00042H
@@ -575,29 +575,29 @@ Directive:
                   @@CODEL  h_adg      0645AH    00AD6H
                   @@CODEL  h_bat_ctrl
                                       06F30H    003A1H
-                  @@CODEL  h_com      072D1H    00906H
+                  @@CODEL  h_com      072D1H    00913H
                   @@CODEL  h_key_disp
-                                      07BD7H    00C78H
-                  @@CODEL  h_main     0884FH    007A7H
+                                      07BE4H    00C78H
+                  @@CODEL  h_main     0885CH    007A7H
                   @@CODEL  h_protect
-                                      08FF6H    00482H
+                                      09003H    00482H
                   @@CODEL  h_rom_para2
-                                      09478H    00000H
-                  @@CODEL  M_buzz     09478H    000C1H
+                                      09485H    00000H
+                  @@CODEL  M_buzz     09485H    000C1H
                   @@CODEL  m_peripheral_control
-                                      09539H    000D3H
+                                      09546H    000D3H
                   @@CODEL  m_key_operation
-                                      0960CH    00CC5H
+                                      09619H    00CC5H
                   @@CODEL  m_PTC_heat
-                                      0A2D1H    00181H
-                  @@CODEL  m_test     0A452H    00234H
-* gap *                               0A686H    0597AH
+                                      0A2DEH    001CEH
+                  @@CODEL  m_test     0A4ACH    00234H
+* gap *                               0A6E0H    05920H
 
   MEMORY=RAM
   BASE ADDRESS=FCF00H   SIZE=03100H
          OUTPUT   INPUT    INPUT      BASE      SIZE
          SEGMENT  SEGMENT  MODULE     ADDRESS
-         @@DATA                       FCF00H    005B6H  DSEG BASEP
+         @@DATA                       FCF00H    005B8H  DSEG BASEP
                   @@DATA   @cstart    FCF00H    000BAH
                   @@DATA   r_main     FCFBAH    00000H
                   @@DATA   r_systeminit
@@ -631,329 +631,329 @@ Directive:
                   @@DATA   h_adg      FD0B6H    00066H
                   @@DATA   h_bat_ctrl
                                       FD11CH    0000CH
-                  @@DATA   h_com      FD128H    000E2H
+                  @@DATA   h_com      FD128H    000E4H
                   @@DATA   h_key_disp
-                                      FD20AH    0003EH
-                  @@DATA   h_main     FD248H    00012H
+                                      FD20CH    0003EH
+                  @@DATA   h_main     FD24AH    00012H
                   @@DATA   h_protect
-                                      FD25AH    00024H
+                                      FD25CH    00024H
                   @@DATA   h_rom_para2
-                                      FD27EH    001DAH
-                  @@DATA   M_buzz     FD458H    00008H
+                                      FD280H    001DAH
+                  @@DATA   M_buzz     FD45AH    00008H
                   @@DATA   m_peripheral_control
-                                      FD460H    00004H
+                                      FD462H    00004H
                   @@DATA   m_key_operation
-                                      FD464H    00046H
+                                      FD466H    00046H
                   @@DATA   m_PTC_heat
-                                      FD4AAH    00004H
-                  @@DATA   m_test     FD4AEH    00008H
-                  @@DATA   @rom       FD4B6H    00000H
-         @@INIT                       FD4B6H    00002H  DSEG BASEP
-                  @@INIT   @cstart    FD4B6H    00000H
-                  @@INIT   r_main     FD4B6H    00000H
+                                      FD4ACH    00004H
+                  @@DATA   m_test     FD4B0H    00008H
+                  @@DATA   @rom       FD4B8H    00000H
+         @@INIT                       FD4B8H    00002H  DSEG BASEP
+                  @@INIT   @cstart    FD4B8H    00000H
+                  @@INIT   r_main     FD4B8H    00000H
                   @@INIT   r_systeminit
-                                      FD4B6H    00000H
-                  @@INIT   r_cg_cgc   FD4B6H    00000H
+                                      FD4B8H    00000H
+                  @@INIT   r_cg_cgc   FD4B8H    00000H
                   @@INIT   r_cg_cgc_user
-                                      FD4B6H    00000H
+                                      FD4B8H    00000H
                   @@INIT   r_cg_serial
-                                      FD4B6H    00000H
+                                      FD4B8H    00000H
                   @@INIT   r_cg_serial_user
-                                      FD4B6H    00000H
+                                      FD4B8H    00000H
                   @@INIT   r_cg_port
-                                      FD4B6H    00000H
+                                      FD4B8H    00000H
                   @@INIT   r_cg_port_user
-                                      FD4B6H    00000H
+                                      FD4B8H    00000H
                   @@INIT   r_cg_intc
-                                      FD4B6H    00000H
+                                      FD4B8H    00000H
                   @@INIT   r_cg_intc_user
-                                      FD4B6H    00000H
-                  @@INIT   r_cg_adc   FD4B6H    00000H
+                                      FD4B8H    00000H
+                  @@INIT   r_cg_adc   FD4B8H    00000H
                   @@INIT   r_cg_adc_user
-                                      FD4B6H    00000H
+                                      FD4B8H    00000H
                   @@INIT   r_cg_timer
-                                      FD4B6H    00000H
+                                      FD4B8H    00000H
                   @@INIT   r_cg_timer_user
-                                      FD4B6H    00000H
-                  @@INIT   r_cg_wdt   FD4B6H    00000H
+                                      FD4B8H    00000H
+                  @@INIT   r_cg_wdt   FD4B8H    00000H
                   @@INIT   r_cg_wdt_user
-                                      FD4B6H    00000H
-                  @@INIT   h_ad       FD4B6H    00000H
-                  @@INIT   h_adg      FD4B6H    00000H
+                                      FD4B8H    00000H
+                  @@INIT   h_ad       FD4B8H    00000H
+                  @@INIT   h_adg      FD4B8H    00000H
                   @@INIT   h_bat_ctrl
-                                      FD4B6H    00000H
-                  @@INIT   h_com      FD4B6H    00002H
+                                      FD4B8H    00000H
+                  @@INIT   h_com      FD4B8H    00002H
                   @@INIT   h_key_disp
-                                      FD4B8H    00000H
-                  @@INIT   h_main     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INIT   h_main     FD4BAH    00000H
                   @@INIT   h_protect
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIT   h_rom_para2
-                                      FD4B8H    00000H
-                  @@INIT   M_buzz     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INIT   M_buzz     FD4BAH    00000H
                   @@INIT   m_peripheral_control
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIT   m_key_operation
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIT   m_PTC_heat
-                                      FD4B8H    00000H
-                  @@INIT   m_test     FD4B8H    00000H
-                  @@INIT   @rom       FD4B8H    00000H
-         @@INIS                       FD4B8H    00000H  DSEG UNITP
-                  @@INIS   @cstart    FD4B8H    00000H
-                  @@INIS   r_main     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INIT   m_test     FD4BAH    00000H
+                  @@INIT   @rom       FD4BAH    00000H
+         @@INIS                       FD4BAH    00000H  DSEG UNITP
+                  @@INIS   @cstart    FD4BAH    00000H
+                  @@INIS   r_main     FD4BAH    00000H
                   @@INIS   r_systeminit
-                                      FD4B8H    00000H
-                  @@INIS   r_cg_cgc   FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INIS   r_cg_cgc   FD4BAH    00000H
                   @@INIS   r_cg_cgc_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIS   r_cg_serial
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIS   r_cg_serial_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIS   r_cg_port
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIS   r_cg_port_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIS   r_cg_intc
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIS   r_cg_intc_user
-                                      FD4B8H    00000H
-                  @@INIS   r_cg_adc   FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INIS   r_cg_adc   FD4BAH    00000H
                   @@INIS   r_cg_adc_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIS   r_cg_timer
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIS   r_cg_timer_user
-                                      FD4B8H    00000H
-                  @@INIS   r_cg_wdt   FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INIS   r_cg_wdt   FD4BAH    00000H
                   @@INIS   r_cg_wdt_user
-                                      FD4B8H    00000H
-                  @@INIS   h_ad       FD4B8H    00000H
-                  @@INIS   h_adg      FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INIS   h_ad       FD4BAH    00000H
+                  @@INIS   h_adg      FD4BAH    00000H
                   @@INIS   h_bat_ctrl
-                                      FD4B8H    00000H
-                  @@INIS   h_com      FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INIS   h_com      FD4BAH    00000H
                   @@INIS   h_key_disp
-                                      FD4B8H    00000H
-                  @@INIS   h_main     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INIS   h_main     FD4BAH    00000H
                   @@INIS   h_protect
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIS   h_rom_para2
-                                      FD4B8H    00000H
-                  @@INIS   M_buzz     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INIS   M_buzz     FD4BAH    00000H
                   @@INIS   m_peripheral_control
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIS   m_key_operation
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INIS   m_PTC_heat
-                                      FD4B8H    00000H
-                  @@INIS   m_test     FD4B8H    00000H
-                  @@INIS   @rom       FD4B8H    00000H
-         @@DATS                       FD4B8H    00000H  DSEG UNITP
-                  @@DATS   @cstart    FD4B8H    00000H
-                  @@DATS   r_main     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INIS   m_test     FD4BAH    00000H
+                  @@INIS   @rom       FD4BAH    00000H
+         @@DATS                       FD4BAH    00000H  DSEG UNITP
+                  @@DATS   @cstart    FD4BAH    00000H
+                  @@DATS   r_main     FD4BAH    00000H
                   @@DATS   r_systeminit
-                                      FD4B8H    00000H
-                  @@DATS   r_cg_cgc   FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATS   r_cg_cgc   FD4BAH    00000H
                   @@DATS   r_cg_cgc_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATS   r_cg_serial
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATS   r_cg_serial_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATS   r_cg_port
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATS   r_cg_port_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATS   r_cg_intc
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATS   r_cg_intc_user
-                                      FD4B8H    00000H
-                  @@DATS   r_cg_adc   FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATS   r_cg_adc   FD4BAH    00000H
                   @@DATS   r_cg_adc_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATS   r_cg_timer
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATS   r_cg_timer_user
-                                      FD4B8H    00000H
-                  @@DATS   r_cg_wdt   FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATS   r_cg_wdt   FD4BAH    00000H
                   @@DATS   r_cg_wdt_user
-                                      FD4B8H    00000H
-                  @@DATS   h_ad       FD4B8H    00000H
-                  @@DATS   h_adg      FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATS   h_ad       FD4BAH    00000H
+                  @@DATS   h_adg      FD4BAH    00000H
                   @@DATS   h_bat_ctrl
-                                      FD4B8H    00000H
-                  @@DATS   h_com      FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATS   h_com      FD4BAH    00000H
                   @@DATS   h_key_disp
-                                      FD4B8H    00000H
-                  @@DATS   h_main     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATS   h_main     FD4BAH    00000H
                   @@DATS   h_protect
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATS   h_rom_para2
-                                      FD4B8H    00000H
-                  @@DATS   M_buzz     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATS   M_buzz     FD4BAH    00000H
                   @@DATS   m_peripheral_control
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATS   m_key_operation
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATS   m_PTC_heat
-                                      FD4B8H    00000H
-                  @@DATS   m_test     FD4B8H    00000H
-                  @@DATS   @rom       FD4B8H    00000H
-         @@INITL                      FD4B8H    00000H  DSEG UNIT64KP
-                  @@INITL  @cstart    FD4B8H    00000H
-                  @@INITL  r_main     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATS   m_test     FD4BAH    00000H
+                  @@DATS   @rom       FD4BAH    00000H
+         @@INITL                      FD4BAH    00000H  DSEG UNIT64KP
+                  @@INITL  @cstart    FD4BAH    00000H
+                  @@INITL  r_main     FD4BAH    00000H
                   @@INITL  r_systeminit
-                                      FD4B8H    00000H
-                  @@INITL  r_cg_cgc   FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INITL  r_cg_cgc   FD4BAH    00000H
                   @@INITL  r_cg_cgc_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INITL  r_cg_serial
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INITL  r_cg_serial_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INITL  r_cg_port
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INITL  r_cg_port_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INITL  r_cg_intc
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INITL  r_cg_intc_user
-                                      FD4B8H    00000H
-                  @@INITL  r_cg_adc   FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INITL  r_cg_adc   FD4BAH    00000H
                   @@INITL  r_cg_adc_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INITL  r_cg_timer
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INITL  r_cg_timer_user
-                                      FD4B8H    00000H
-                  @@INITL  r_cg_wdt   FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INITL  r_cg_wdt   FD4BAH    00000H
                   @@INITL  r_cg_wdt_user
-                                      FD4B8H    00000H
-                  @@INITL  h_ad       FD4B8H    00000H
-                  @@INITL  h_adg      FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INITL  h_ad       FD4BAH    00000H
+                  @@INITL  h_adg      FD4BAH    00000H
                   @@INITL  h_bat_ctrl
-                                      FD4B8H    00000H
-                  @@INITL  h_com      FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INITL  h_com      FD4BAH    00000H
                   @@INITL  h_key_disp
-                                      FD4B8H    00000H
-                  @@INITL  h_main     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INITL  h_main     FD4BAH    00000H
                   @@INITL  h_protect
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INITL  h_rom_para2
-                                      FD4B8H    00000H
-                  @@INITL  M_buzz     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INITL  M_buzz     FD4BAH    00000H
                   @@INITL  m_peripheral_control
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INITL  m_key_operation
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@INITL  m_PTC_heat
-                                      FD4B8H    00000H
-                  @@INITL  m_test     FD4B8H    00000H
-                  @@INITL  @rom       FD4B8H    00000H
-         @@DATAL                      FD4B8H    00000H  DSEG UNIT64KP
-                  @@DATAL  @cstart    FD4B8H    00000H
-                  @@DATAL  r_main     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@INITL  m_test     FD4BAH    00000H
+                  @@INITL  @rom       FD4BAH    00000H
+         @@DATAL                      FD4BAH    00000H  DSEG UNIT64KP
+                  @@DATAL  @cstart    FD4BAH    00000H
+                  @@DATAL  r_main     FD4BAH    00000H
                   @@DATAL  r_systeminit
-                                      FD4B8H    00000H
-                  @@DATAL  r_cg_cgc   FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATAL  r_cg_cgc   FD4BAH    00000H
                   @@DATAL  r_cg_cgc_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATAL  r_cg_serial
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATAL  r_cg_serial_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATAL  r_cg_port
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATAL  r_cg_port_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATAL  r_cg_intc
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATAL  r_cg_intc_user
-                                      FD4B8H    00000H
-                  @@DATAL  r_cg_adc   FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATAL  r_cg_adc   FD4BAH    00000H
                   @@DATAL  r_cg_adc_user
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATAL  r_cg_timer
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATAL  r_cg_timer_user
-                                      FD4B8H    00000H
-                  @@DATAL  r_cg_wdt   FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATAL  r_cg_wdt   FD4BAH    00000H
                   @@DATAL  r_cg_wdt_user
-                                      FD4B8H    00000H
-                  @@DATAL  h_ad       FD4B8H    00000H
-                  @@DATAL  h_adg      FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATAL  h_ad       FD4BAH    00000H
+                  @@DATAL  h_adg      FD4BAH    00000H
                   @@DATAL  h_bat_ctrl
-                                      FD4B8H    00000H
-                  @@DATAL  h_com      FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATAL  h_com      FD4BAH    00000H
                   @@DATAL  h_key_disp
-                                      FD4B8H    00000H
-                  @@DATAL  h_main     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATAL  h_main     FD4BAH    00000H
                   @@DATAL  h_protect
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATAL  h_rom_para2
-                                      FD4B8H    00000H
-                  @@DATAL  M_buzz     FD4B8H    00000H
+                                      FD4BAH    00000H
+                  @@DATAL  M_buzz     FD4BAH    00000H
                   @@DATAL  m_peripheral_control
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATAL  m_key_operation
-                                      FD4B8H    00000H
+                                      FD4BAH    00000H
                   @@DATAL  m_PTC_heat
-                                      FD4B8H    00000H
-                  @@DATAL  m_test     FD4B8H    00000H
-                  @@DATAL  @rom       FD4B8H    00000H
-         @@BITS                       FD4B8H    00000H  BSEG
-                  @@BITS   @cstart    FD4B8H.0  00000H.0
-                  @@BITS   r_main     FD4B8H.0  00000H.0
+                                      FD4BAH    00000H
+                  @@DATAL  m_test     FD4BAH    00000H
+                  @@DATAL  @rom       FD4BAH    00000H
+         @@BITS                       FD4BAH    00000H  BSEG
+                  @@BITS   @cstart    FD4BAH.0  00000H.0
+                  @@BITS   r_main     FD4BAH.0  00000H.0
                   @@BITS   r_systeminit
-                                      FD4B8H.0  00000H.0
-                  @@BITS   r_cg_cgc   FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
+                  @@BITS   r_cg_cgc   FD4BAH.0  00000H.0
                   @@BITS   r_cg_cgc_user
-                                      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
                   @@BITS   r_cg_serial
-                                      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
                   @@BITS   r_cg_serial_user
-                                      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
                   @@BITS   r_cg_port
-                                      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
                   @@BITS   r_cg_port_user
-                                      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
                   @@BITS   r_cg_intc
-                                      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
                   @@BITS   r_cg_intc_user
-                                      FD4B8H.0  00000H.0
-                  @@BITS   r_cg_adc   FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
+                  @@BITS   r_cg_adc   FD4BAH.0  00000H.0
                   @@BITS   r_cg_adc_user
-                                      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
                   @@BITS   r_cg_timer
-                                      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
                   @@BITS   r_cg_timer_user
-                                      FD4B8H.0  00000H.0
-                  @@BITS   r_cg_wdt   FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
+                  @@BITS   r_cg_wdt   FD4BAH.0  00000H.0
                   @@BITS   r_cg_wdt_user
-                                      FD4B8H.0  00000H.0
-                  @@BITS   h_ad       FD4B8H.0  00000H.0
-                  @@BITS   h_adg      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
+                  @@BITS   h_ad       FD4BAH.0  00000H.0
+                  @@BITS   h_adg      FD4BAH.0  00000H.0
                   @@BITS   h_bat_ctrl
-                                      FD4B8H.0  00000H.0
-                  @@BITS   h_com      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
+                  @@BITS   h_com      FD4BAH.0  00000H.0
                   @@BITS   h_key_disp
-                                      FD4B8H.0  00000H.0
-                  @@BITS   h_main     FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
+                  @@BITS   h_main     FD4BAH.0  00000H.0
                   @@BITS   h_protect
-                                      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
                   @@BITS   h_rom_para2
-                                      FD4B8H.0  00000H.0
-                  @@BITS   M_buzz     FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
+                  @@BITS   M_buzz     FD4BAH.0  00000H.0
                   @@BITS   m_peripheral_control
-                                      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
                   @@BITS   m_key_operation
-                                      FD4B8H.0  00000H.0
+                                      FD4BAH.0  00000H.0
                   @@BITS   m_PTC_heat
-                                      FD4B8H.0  00000H.0
-                  @@BITS   m_test     FD4B8H.0  00000H.0
-* gap *                               FD4B8H    02A1CH
+                                      FD4BAH.0  00000H.0
+                  @@BITS   m_test     FD4BAH.0  00000H.0
+* gap *                               FD4BAH    02A1AH
          @@SEGREG                     FFED4H    00004H  DSEG AT
                   @@SEGREG @SEGREG    FFED4H    00004H
          @@RTARG0                     FFED8H    00008H  DSEG AT

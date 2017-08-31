@@ -84,7 +84,7 @@ uint8_t  guc_IC_erasure_tx_ok_count; // 注销IC卡指令，在bflg_com_tx_ok中设置发送
 
 int16_t gss_liquid_led_button;              //液晶屏的开灯按钮  ：1开 0关
 int16_t gss_liquid_ozone_disinfect_button;  //液晶屏的启动杀菌按钮：1开 0关
-
+int16_t gss_pwm_adjust;                     //对PTC模块输出pwm占空比的调节
 
 #define   WRITE_STATE_CNT     50
 
@@ -770,13 +770,17 @@ void com_rx_data_deal(void)   //通讯接收数据处理程序，在主循环程序中调用
                     //--------------------------------------
                     gss_tmp.ubyte.low = guc_com_rx_buffer[15];
                     gss_tmp.ubyte.high = guc_com_rx_buffer[16];
-                    gss_factory_parm_value[DISP_FAC_r0] = gss_tmp.sword; 
+                    gss_factory_parm_value[DISP_FAC_r1] = gss_tmp.sword; 
                     //ram_para[num_comp2_PT100_shield] = gss_tmp.sword; //档位切换温差 ok
                     //--------------------------------------
                     gss_tmp.ubyte.low = guc_com_rx_buffer[17];
                     gss_tmp.ubyte.high = guc_com_rx_buffer[18];
                     gss_factory_parm_value[DISP_FAC_Ct3] = gss_tmp.sword; 
                     //ram_para[num_comp2_THW_shield] = gss_tmp.sword;   //市电校准值 ok
+                    //--------------------------------------
+                    gss_tmp.ubyte.low = guc_com_rx_buffer[19];
+                    gss_tmp.ubyte.high = guc_com_rx_buffer[20];
+                    gss_pwm_adjust  = gss_tmp.sword;                    //pwm占空比
                 }
             }
         }
